@@ -1,0 +1,84 @@
+.home {
+  max-width: 100%;
+  width: 75%;
+  margin: 0 auto;
+  .topwebsite {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .hey {
+      font-size: 1.8em;
+    }
+    .addgametitle {
+      font-size: 1.8em;
+      color: white;
+      text-decoration: none;
+    }
+
+    .gotoprofilbtn {
+      color: white;
+      text-decoration: none;
+      :visited {
+        color: white;
+      }
+    }
+  }
+  .addgamebtndiv {
+    width: 100%;
+    .addgamebtn {
+      background-color: white;
+      padding: 5px 15px;
+      font-size: 2.5em;
+      border-radius: 10px;
+      float: right;
+    }
+  }
+  .gamescontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .icon {
+      font-size: 1.3em;
+      margin-top: 5px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .deletebtn {
+      cursor: pointer;
+    }
+    .gamecontainer {
+      margin: 20px;
+
+      .gamebottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .gamename {
+        color: white;
+        font-size: 1.5em;
+        margin-top: 10px;
+      }
+      .gameposter {
+        width: 250px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .tools {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: flex-end;
+        color: white;
+      }
+    }
+  }
+}

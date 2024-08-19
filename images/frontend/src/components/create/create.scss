@@ -1,0 +1,82 @@
+.create {
+  max-width: 100%;
+  width: 75%;
+  margin: 0 auto;
+  .topwebsite {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .hey {
+      font-size: 1.8em;
+    }
+    .addgametitle {
+      font-size: 1.8em;
+    }
+  }
+
+  .addgameform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .label {
+      font-size: 1.7em;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .input {
+      background-color: white;
+      border-radius: 15px;
+      padding: 20px 200px;
+      color: white;
+      font-family: Poppins;
+      font-size: 1.5em;
+      text-align: left;
+    }
+    .inputform {
+      display: flex;
+      flex-direction: column;
+    }
+    .firstaddgameform {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .secondaddgameform {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .thirdaddgameform {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .descriptioninput {
+        background-color: white;
+        border-radius: 15px;
+        padding: 75px 255px;
+        color: white;
+        font-family: Poppins;
+        font-size: 1em;
+      }
+    }
+    .addgamesubmit {
+      width: 150px;
+      padding: 15px 25px;
+      background-color: #A1CDA8;
+      border-radius: 10px;
+      color: white;
+      font-family: Poppins;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.login {
+  margin-top: 200px;
+  .welcomeback {
+    margin: 0 auto;
+    color: white;
+    font-size: 4.5em;
+    text-align: center;
+  }
+
+  .loginform {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 0 auto;
+
+    .label {
+      color: white;
+      font-size: 1.5em;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+
+    .input {
+      color: white;
+      font-family: Poppins;
+    }
+
+    .emailinput {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+    }
+
+    .passwordinput {
+      background-color: white;
+      border-radius: 15px;
+      padding: 25px;
+    }
+    .submitlogin {
+      padding: 10px 25px;
+      background-color: #3772FF;
+      color: white;
+      font-family: Poppins;
+      border-radius: 15px;
+      font-size: 1.5em;
+      margin-top: 15px;
+      float: right;
+    }
+  }
+  .redirectsignup {
+    color: white;
+    margin: center;
+    margin-top: 15px;
+    float: right;
+  }
+}

@@ -1,0 +1,41 @@
+services:
+  api:
+    depends_on:
+      store:
+        condition: service_healthy
+    build: ./images/api
+    ports:
+      - 81:3000
+    volumes:
+      - ./images/api/src:/usr/app/src
+    environment:
+      PG_CONNECTION_STRING: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@gamelibraryDB:5432/${POSTGRES_DB}"
+
+  frontend:
+    depends_on:
+      - api
+    build:
+      context: ./images/frontend
+    container_name: frontend
+    ports:
+      - 5173:5173
+    volumes:
+      - ./images/frontend/src:/usr/src/app/src
+
+  store:
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U $POSTGRES_USER -d $POSTGRES_DB" ]
+      interval: 25s
+      timeout: 20s
+      retries: 5
+    container_name: gamelibraryDB
+    image: postgres:latest
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER:
+      POSTGRES_PASSWORD:
+      POSTGRES_DB:
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+    volumes:
+      - ./_backup:/var/lib/postgresql/data

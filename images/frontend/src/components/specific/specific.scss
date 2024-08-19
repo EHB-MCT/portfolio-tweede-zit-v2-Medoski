@@ -1,0 +1,46 @@
+.specific {
+  max-width: 100%;
+  width: 75%;
+  margin: 0 auto;
+  .topwebsite {
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    .hey {
+      font-size: 1.8em;
+    }
+    .addgametitle {
+      font-size: 1.8em;
+    }
+  }
+
+  .specificmain {
+    display: flex;
+    flex-direction: row;
+
+    .mainleft {
+      .gameposter {
+        border-radius: 10px;
+        width: 400px;
+      }
+    }
+    .mainright {
+      margin-left: 50px;
+    }
+
+    .text {
+      color: white;
+      font-size: 1.5em;
+      margin: 25px;
+      margin-left: 0px;
+    }
+
+    .gametitle {
+      font-size: 3em;
+      margin: 0px;
+    }
+  }
+}

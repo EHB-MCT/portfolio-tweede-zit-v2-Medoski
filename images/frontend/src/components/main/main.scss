@@ -1,0 +1,120 @@
+.main {
+  .introtitle {
+    margin: 0 auto;
+    font-size: 4.5em;
+    width: 650px;
+    color: white;
+    text-align: left;
+    line-height: 1.5em;
+  }
+
+  .form {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 650px;
+    color: white;
+    .formtitle {
+      color: white;
+      font-size: 2em;
+      margin-bottom: 25px;
+    }
+    .label {
+      font-size: 1.3em;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+    .topform {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .firstnamediv {
+        display: flex;
+        flex-direction: column;
+
+        .firstnameinput {
+          background-color: white;
+          border-radius: 15px;
+          border: 2px solid white;
+          padding: 20px 65px;
+          color: white;
+          font-family: Poppins;
+        }
+      }
+      .lastnamediv {
+        display: flex;
+        flex-direction: column;
+
+        .lastnameinput {
+          background-color: white;
+          border-radius: 15px;
+          border: 2px solid white;
+          padding: 20px 65px;
+          color: white;
+          font-family: Poppins;
+        }
+      }
+    }
+
+    .bottomform {
+      display: flex;
+      flex-direction: column;
+
+      .emaildiv {
+        display: flex;
+        flex-direction: column;
+
+        .emaillabel {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        .emailinput {
+          background-color: white;
+          border-radius: 15px;
+          padding: 20px 65px;
+          color: white;
+          font-family: Poppins;
+        }
+      }
+      .passworddiv {
+        display: flex;
+        flex-direction: column;
+
+        .passwordinput {
+          background-color: white;
+          border-radius: 15px;         
+          padding: 20px 65px;
+          color: white;
+          font-family: Poppins;
+        }
+      }
+    }
+    .submitregisterdiv {
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+
+      .registerbtn {
+        color: white;
+        background-color: #A1CDA8;
+        padding: 10px 35px;
+        font-size: 1.2em;
+        font-family: Poppins;
+        border-radius: 15px;
+        margin-top: 20px;
+        float: right;
+      }
+
+      .signinredirect {
+        margin-top: 20px;
+
+        .loginbtn {
+          color: rgb(173, 173, 173);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
